@@ -56,7 +56,6 @@
 		height:100px;
 		width:100%;
 	}
-	canvas#surface{position:fixed; z-index:-1}
 </style>
 	<div class="container" style="display: inline-block;">
 		<img id="project" width="500" height="500" src="GitHub-Mark.png" alt="GitHub/Projects">
@@ -76,17 +75,5 @@
 			<div class="text">About Me</div>
 		</div>
 	</div>
-  <article class='example'>
-   <canvas id = 'surface' width='1600' height='520'>
-   </canvas>
-	<script type="text/javascript">
-	 function onWindowResize(){
-	  context.canvas.width= window.innerWidth;
-	  context.canvas.height= window.innerHeight;
-	 }
-	$(window).resize(onWindowResize);
-	onWindowResize();
-	</script>
-   </article>
 </body>
 </html>
