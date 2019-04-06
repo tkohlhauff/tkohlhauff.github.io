@@ -1,6 +1,15 @@
 <html>
 <body>
 <style type='text/css'>
+	.header{
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100px;
+		color:black;
+		
+	}
 	.container {
   		position:relative;
   		width: 500px;
@@ -47,10 +56,12 @@
 	}
 	canvas#surface{position:fixed; z-index:-1}
 </style>
+	<div class="header">
+	</div>
 	<div class="container" style="display: inline-block;">
 		<img id="project" width="500" height="500" src="GitHub-Mark.png" alt="GitHub/Projects">
 		<div class="overlay">
-			<div class="text">GitHub</div>
+			<div class="text">GitHub/Projects</div>
 		</div>
 	</div>
 	<div class="container" style="display: inline-block;">
