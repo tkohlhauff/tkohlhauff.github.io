@@ -1,7 +1,7 @@
 <html>
-<ul>
+<div class="navbar">
 <h1 style="font-size:10vw color:white">Hello World</h1>
-</ul>
+</div>
 <body>
 <style type='text/css'>
 	.container {
@@ -47,7 +47,7 @@
 		left: 0;
 		right: 0;
 	}
-	ul {
+	.navbar {
 		position:fixed;
   		list-style-type: none;
   		margin: 0;
@@ -57,6 +57,15 @@
 		left:0;
 		height:100px;
 		width:100%;
+	}
+	.navbar h1{
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		-webkit-transform: translate(-50%, -50%);
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+  		text-align: center;
 	}
 </style>
 	<div class="container" style="display: inline-block;">
