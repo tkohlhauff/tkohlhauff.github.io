@@ -1,14 +1,16 @@
-<html>
-<div class="navbar">
+<html><head></head><body><div class="navbar">
 <div class="text">Trenton Kohlhauff's Projects</div>
 </div>
-<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
-<body>
-<style type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+<style type="text/css">	img{
+		width: 100%;
+		height: 100%;
+	}
 	.container {
   		position:relative;
-  		width: 500px;
-		height: 500px;
+  		width: 20%;
+		height: 37.6%;
 	}
 	.overlay {
   		position: absolute;
@@ -38,12 +40,12 @@
   		text-align: center;
 	}
 	body{ 
-		padding:100px;
-		margin: auto;
-		display:block;
-		width:1600px;
-		height:520px;
-		position: absolute;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+		width:100vw;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -62,22 +64,23 @@
 	}
 </style>
 	<div class="container" style="display: inline-block;">
-		<img id="project" width="500" height="500" src="python.png" alt="python">
+		<img id="project" src="python.png" alt="python">
 		<div class="overlay">
 			<div class="text">Python Projects</div>
 		</div>
 	</div>
 	<div class="container" style="display: inline-block;">
-		<img id="test" width="500" height="500" src="html.png" alt="html">
+		<img id="test" src="html.png" alt="html">
 		<div class="overlay">
 			<div class="text">HTML Projects</div>
 		</div>
 	</div>
 	<div class="container" style="display: inline-block;">
-		<img id="lel" width="500" height="500" src="sql.png" alt="sql">
+		<img id="lel" src="sql.png" alt="sql">
 		<div class="overlay">
 			<div class="text">mySQL/PHP Projects</div>
 		</div>
 	</div>
-</body>
-</html>
+
+
+</body></html>
