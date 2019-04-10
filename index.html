@@ -5,13 +5,22 @@
 <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 <body>
 <style type='text/css'>
+<style type="text/css">	
+	a{
+		color:white;
+		text-decoration: none;
+	}
 	a div{
 		border:0px none;
 	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
 	.container {
   		position:relative;
-  		width: 500px;
-		height: 500px;
+  		width: 19.9%;
+		height: 37%;
 	}
 	.overlay {
   		position: absolute;
@@ -30,7 +39,7 @@
 	}
 	.text {
   		color: white;
-  		font-size: 2vw;
+  		font-size: 1.75vw;
 		font-family: "Cinzel";
   		position: absolute;
   		top: 50%;
@@ -40,17 +49,13 @@
   		transform: translate(-50%, -50%);
   		text-align: center;
 	}
-	body{ 
-		padding:100px;
-		margin: auto;
-		display:block;
-		width:1600px;
-		height:520px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+	.outcontain{ 
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		height:100%;
+		width:100%;
 	}
 	.navbar {
 		position:fixed;
@@ -60,29 +65,53 @@
   		background-color: #000000;
 		top:0;
 		left:0;
-		height:100px;
+		height:7.65%;
 		width:100%;
 	}
+	.returnbar{
+		position: fixed;
+  		bottom: 0;
+		left: 0;
+		height:75px;
+		width: 100%;
+		color: white;
+  		font-size: 1.5vw;
+		font-family: "Cinzel";
+		text-align: center;
+		vertical-align:middle;
+		line-height:75px;
+  		list-style-type: none;
+		background-color: #000000;
+	}
 </style>
-	<a href="/projects/">
+<div class="outcontain">
 	<div class="container" style="display: inline-block;">
-		<img id="project" width="500" height="500" src="GitHub-Mark.png" alt="GitHub/Projects">
-		<div class="overlay">
-			<div class="text">GitHub/Projects</div>
-		</div>
+		<img id="project" src="GitHub-Mark.png" alt="GitHub/Projects">
+		<a href="/projects/">
+			<div class="overlay">
+				<div class="text">GitHub/Projects</div>
+			</div>
+		</a>
 	</div>
-	</a>
 	<div class="container" style="display: inline-block;">
-		<img id="test" width="500" height="500" src="Resume.PNG" alt="Resume">
+		<img id="test" src="Resume.PNG" alt="Resume">
 		<div class="overlay">
 			<div class="text">Resume</div>
 		</div>
 	</div>
 	<div class="container" style="display: inline-block;">
-		<img id="lel" width="500" height="500" src="me.jpg" alt="me">
+		<img id="lel" src="me.jpg" alt="me">
 		<div class="overlay">
 			<div class="text">About Me</div>
 		</div>
 	</div>
+	<div class="returnbar">
+		<a href="https://www.linkedin.com/in/trenton-kohlhauff-5006b79a">
+			<div class="text">
+				LinkedIN
+			</div>
+		</a>
+	</div>
+</div>
 </body>
 </html>
