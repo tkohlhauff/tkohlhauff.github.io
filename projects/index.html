@@ -68,18 +68,32 @@
 	}
 	.returnbar{
 		position: fixed;
+        	display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
   		bottom: 0;
 		left: 0;
 		height:75px;
 		width: 100%;
 		color: white;
-  		font-size: 1.5vw;
+  		font-size: 1vw;
 		font-family: "Cinzel";
-		text-align: center;
-		vertical-align:middle;
+        	text-align: center;
+  		text-decoration: none;
 		line-height:75px;
   		list-style-type: none;
 		background-color: #000000;
+	}
+	.link {
+  		display: inline-block;
+        	position:relative;
+		height:100%;
+		width:100px;
+	}
+	.link:hover{
+		background-color:white;
+		color:#000000
 	}
 </style>
 <div class="outcontain">
@@ -110,7 +124,7 @@
 	</div>
 	<div class="returnbar">
 		<a href="../index.html">
-			<div class="text">Back</div>
+			<div class="link">Back</div>
 		</a>
 	</div>
 </div>
